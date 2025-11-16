@@ -9,7 +9,8 @@ License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: restaurant
 */
-/*========================
+
+/*======================== 
 GLOBAL
 =========================*/
 h1 {
@@ -97,7 +98,6 @@ p.desc-text{
 li.item{
     position: relative; 
     width: 100%; /* for IE 6 */
-
     background: rgba(211, 15, 34, 1);
 }
 
@@ -198,7 +198,8 @@ INTRO CONTAINER
     padding: 0;
     min-width: 100%;
     height: 100%;
-    background: url('../images/steak.jpg') no-repeat center center;
+    /* Genshin header image */
+    background: url('../images/nodkrai_header.jpg') no-repeat center center;
     background-size: cover;
     text-align: center;
     background-position: center;  
@@ -264,41 +265,45 @@ INTRO CONTAINER
     border-bottom: 8px solid #fff;
 }
 
+/* Kuuvahki section */
 .beer.background_content{
-    background: url('../images/beer.jpg') no-repeat center center; 
+    background: url('../images/kuuvahki_bg.jpg') no-repeat center center; 
     background-size: cover;
-    background-position: 70% 50%;
+    background-position: center;
 }
 
-.bread.background_content{
-    background: url('../images/bread.jpg') no-repeat center center; 
-    background-size: cover;
-    background-position: 70% 50%;
-}
- .featured.background_content{
-    background: url('../images/featured.jpg') no-repeat center center; 
+/* Banner section (Neffer / featured) */
+.featured.background_content{
+    background: url('../images/nodkrai_banner_bg.jpg') no-repeat center center; 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
- .pricing.background_content{
-    background: url('../images/pricing.jpg') no-repeat center center; 
+
+/* Characters section */
+.pricing.background_content{
+    background: url('../images/nodkrai_characters_bg.jpg') no-repeat center center; 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
+/* Map section (in case you use class="reservation background_content") */
 .reservation.background_content{
-    background: url('../images/reservation-seat.jpg') no-repeat center center; 
+    background: url('../images/nodkrai_map_bg.jpg') no-repeat center center; 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
+/* Ruler section */
 .bread.background_content{
-    background: url('../images/breakfast.jpg') no-repeat center center; 
+    background: url('../images/nodkrai_ruler_bg.jpg') no-repeat center center; 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
 /*========================
 DESCRIPTION BODY CONTENT
 =========================*/
@@ -591,7 +596,7 @@ MEDIA QUERIES TABLET
 =========================*/
 
 
-    @media (min-width: 400px) { 
+@media (min-width: 400px) { 
     .starter_container {
         height: 100%;
     }
@@ -604,11 +609,11 @@ MEDIA QUERIES TABLET
 MEDIA QUERIES TABLET
 =========================*/
 
-    @media (min-width: 660px) { 
+@media (min-width: 660px) { 
   
-        .starter_container {
-            height: 100%;
-        }
+    .starter_container {
+        height: 100%;
+    }
 
     /*========================
     NAV
@@ -729,36 +734,34 @@ MEDIA QUERIES TABLET
         border-bottom: 10px solid #fff;
     }
 }
-    /*========================
-    Social Connect
-    =========================*/
+/*========================
+Social Connect
+=========================*/
 
-    section.social_connect {
-        background-color: black;
-        text-align: center;
-        margin-bottom: 50px;
-  }
+section.social_connect {
+    background-color: black;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
-    .social_heading {
-        font-size: 33px;
-        margin: 50px 0 0 0;
-    }
+.social_heading {
+    font-size: 33px;
+    margin: 50px 0 0 0;
+}
 
-    .social_info a {
-        font-size: 24.93px;
-    }
+.social_info a {
+    font-size: 24.93px;
+}
 
-    .social_icons li a {
-        font-size: 30px;
-    }
+.social_icons li a {
+    font-size: 30px;
+}
 
-    .social_info a {
-        display: inline-block;
-        margin: 0 auto;
-        width: 325px;
-    } 
-
-} /*END OF MEDIA QUERY*/
+.social_info a {
+    display: inline-block;
+    margin: 0 auto;
+    width: 325px;
+} 
 
 /*========================
 MEDIA QUERIE DESKTOP
@@ -770,11 +773,9 @@ MEDIA QUERIE DESKTOP
         background-attachment: fixed;
     }
 
-
     /*========================
     BACKGROUND CONTENT
     =========================*/
-
 
     .background_content h1 {
         font-size: 5em;
@@ -818,7 +819,6 @@ MEDIA QUERIE DESKTOP
         margin: 0;
         margin-top: 10px;
     }
-
 
     .picture_content {
         display: inline-block;
